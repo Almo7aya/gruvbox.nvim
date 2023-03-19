@@ -94,7 +94,7 @@ M.setup = function()
     CurSearch = { link = "IncSearch" },
     QuickFixLine = { fg = colors.bg0, bg = colors.yellow, bold = config.bold },
     Underlined = { fg = colors.blue, underline = config.underline },
-    StatusLine = { fg = colors.bg2, bg = colors.fg1, reverse = config.inverse },
+    StatusLine = { fg = colors.fg1, bg = colors.bg1, reverse = config.inverse },
     StatusLineNC = { fg = colors.bg1, bg = colors.fg4, reverse = config.inverse },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
     WinBarNC = { fg = colors.fg3, bg = colors.bg1 },
@@ -116,7 +116,7 @@ M.setup = function()
     iCursor = { link = "Cursor" },
     lCursor = { link = "Cursor" },
     Special = { link = "GruvboxOrange" },
-    Comment = { fg = colors.gray, italic = config.italic },
+    Comment = { fg = colors.gray, italic = config.italic, bold = config.bold },
     Todo = { fg = colors.fg0, bold = config.bold, italic = config.italic },
     Done = { fg = colors.orange, bold = config.bold, italic = config.italic },
     Error = { fg = colors.red, bold = config.bold, reverse = config.inverse },
@@ -128,7 +128,7 @@ M.setup = function()
     Operator = { fg = colors.orange },
     Keyword = { link = "GruvboxRed" },
     Identifier = { link = "GruvboxBlue" },
-    Function = { link = "GruvboxGreenBold" },
+    Function = { link = "GruvboxOrangeBold" },
     PreProc = { link = "GruvboxAqua" },
     Include = { link = "GruvboxAqua" },
     Define = { link = "GruvboxAqua" },
@@ -782,6 +782,7 @@ M.setup = function()
     CarbonIndicator = { link = "GruvboxGray" },
     CarbonDanger = { link = "GruvboxRed" },
     CarbonPending = { link = "GruvboxYellow" },
+    BufferCurrent = { bg = colors.bg1 },
   }
 
   for group, hl in pairs(config.overrides) do
