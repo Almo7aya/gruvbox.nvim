@@ -38,6 +38,7 @@ M.colors = {
   faded_aqua = "#427b58",
   faded_orange = "#af3a03",
   gray = "#5c6370",
+  context = "#4b5263",
 }
 
 M.get_base_colors = function(bg, contrast)
@@ -78,6 +79,7 @@ M.get_base_colors = function(bg, contrast)
       neutral_purple = p.neutral_purple,
       neutral_aqua = p.neutral_aqua,
       gray = p.gray,
+      context = p.context,
     },
     light = {
       bg0 = p.light0,
@@ -104,6 +106,7 @@ M.get_base_colors = function(bg, contrast)
       neutral_purple = p.neutral_purple,
       neutral_aqua = p.neutral_aqua,
       gray = p.gray,
+      context = p.context,
     },
   }
 
@@ -115,3 +118,4 @@ M.get_base_colors = function(bg, contrast)
 end
 
 return M
+
